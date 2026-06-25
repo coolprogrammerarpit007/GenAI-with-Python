@@ -102,3 +102,56 @@
 
 # # byte arrays and memoryview
 # # use case of byte arrays and memoryview is when you need to manipulate binary data, such as reading from or writing to files, working with network protocols, or performing low-level data processing. Byte arrays provide a mutable sequence of bytes, while memoryview allows for efficient access and manipulation of the underlying buffer without copying the data.
+
+# sets and frozensets
+# Sets are mutable collections of unique elements in Python. They are defined using curly braces or the `set()` constructor. Sets support various operations such as union, intersection, and difference. Frozensets are immutable versions of sets, meaning their elements cannot be changed after creation. Both sets and frozensets can be used for membership testing and mathematical set operations.
+
+
+# essential_spices = {"cumin", "turmeric", "coriander", "cardamom"}
+# optional_spices = {"saffron", "cloves", "nutmeg","coriander"}
+
+# all_spices = essential_spices.union(optional_spices)
+# print(f"All spices: {all_spices}")  # Output: All spices: {'cumin', 'turmeric', 'coriander', 'cardamom', 'saffron', 'cloves', 'nutmeg'}
+
+# common_spices = essential_spices.intersection(optional_spices)
+# print(f"Common spices: {common_spices}")  # Output: Common spices: set
+
+
+# only_in_essential = essential_spices.difference(optional_spices)
+# print(f"Spices only in essential: {only_in_essential}")  # Output:
+
+
+# print(f"Is 'cumin' in essential spices? {'cumin' in essential_spices}")  # Output: Is 'cumin' in essential spices? True
+
+
+# Dictionary in Python is a mutable collection of key-value pairs. It is defined using curly braces or the `dict()` constructor. Dictionaries allow for efficient data retrieval based on unique keys, and they support various operations such as adding, updating, and deleting key-value pairs.
+
+student = {
+    "name":"Arpit Mishra",
+    "age":27,
+    "is_married":False,
+    "profession":"Software Engineer",
+    "skills":["python","sql","javascript","fastapi","react","docker","git","AI","System Design","Data Structures","Algorithms","Computer Networks"],
+    "address":{
+        "street":"123 Main St",
+        "city":"New York",
+        "state":"NY",
+        "zip_code":"10001"
+    }
+        
+        
+        
+}
+
+
+# pop vs popitem vs del
+# The `pop()` method removes a specified key from the dictionary and returns its corresponding value.
+# The `popitem()` method removes and returns an arbitrary key-value pair from the dictionary.
+# The `del` statement removes a specified key from the dictionary.
+
+# dictionary is ordered in Python 3.7 and later, meaning that the order of key-value pairs is preserved based on the order of insertion. This allows for predictable iteration over the dictionary items.
+
+# Touch on More Advance data types in python like `collections` module, `namedtuple`, `defaultdict`, `Counter`, `OrderedDict`, and `deque`. These data types provide additional functionality and flexibility for working with data in Python. For example, `namedtuple` allows for creating lightweight, immutable objects with named fields, while `defaultdict` provides a convenient way to handle missing keys in dictionaries. `Counter` is useful for counting occurrences of elements in a collection, and `OrderedDict` maintains the order of insertion for key-value pairs. Finally, `deque` is a double-ended queue that allows for efficient appending and popping of elements from both ends.
+
+
+# Use case of `collections` module is when you need to work with specialized data structures that provide additional functionality beyond the built-in types. For example, you can use `Counter` to count the occurrences of elements in a list, `defaultdict` to handle missing keys in a dictionary, or `deque` for efficient queue operations. These data types can help simplify your code and improve performance in certain scenarios.
